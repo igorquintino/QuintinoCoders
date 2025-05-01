@@ -1,7 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background: url('fundo.jpg');
+    background: url('1\ de\ mai.\ de\ 2025\,\ 17_34_55.png');
     background-size:cover ;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,48 +10,104 @@ body{
 }
 
 
+.box{
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);  /* fundo branco semi-transparente */
+    backdrop-filter: blur(5px);           /* efeito borrado no fundo */
+    -webkit-backdrop-filter: blur(10px);   /* compatibilidade com Safari */
+    border-radius: 12px;
+    margin-top: 5px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 400px;
+    margin-bottom: 10px;
+    }
+
+   
+
+
+ul{
+    color: white;
+    list-style: number;
+    list-style-position: inside;
+    text-align: start;
+}
+
+li{
+    padding-bottom: 5px;
+}
+
+h3{
+    color: white;
+}
+
 .caixa-de-vidro {
     margin: auto;
     background: rgba(255, 255, 255, 0.1);  /* fundo branco semi-transparente */
     backdrop-filter: blur(5px);           /* efeito borrado no fundo */
     -webkit-backdrop-filter: blur(10px);   /* compatibilidade com Safari */
     border-radius: 12px;
-    margin-top: 20px;
-    padding: 25px;
+    margin-top: 5px;
+    padding: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    max-width: 350px;
-  }
+    max-width: 400px;
+}
   
-h1{
-    color: rgb(162, 128, 194);
-    padding-bottom: 15px;
+.titulo{
+    color: blueviolet;
+    font-size: 30PX;
+    padding-bottom: 0px;
+    
+}
+
+.sub{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding-bottom: 10px
 }
 
 p{
     padding: 0;
-    margin-bottom: 0%;
+    margin-bottom: 10px;
     color: white;
-    
 }
 
 h2{
-    font-size:15px ;
-    color: white;
-    padding-top: 25px;
+    font-size:20px ;
+    color: blueviolet;
+    padding-top: 10px;
+}
+
+h3{
+    font-size: 15px;
+}
+
+img{
+    max-width: 200px;
+    max-height: auto;
+    border-radius: 10px;
 }
 
 a {
     font-size: 15px;
     margin: auto;
-    padding: 5px;
-    padding-left: 1px;
+    margin-top: 8px;
+    padding: 20px;
+    padding-left: 6px;
     background-color: blueviolet;
     color: white;
     text-decoration: none;
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 10px;
     width: 280px;         /* <- Força a largura */
     text-align: center;   /* <- Centraliza o texto dentro do botão */
   }
-  
+
+  @media (max-width: 500px) {
+    h2 {
+      color: red;
+      
+    }
+  }
+
   
