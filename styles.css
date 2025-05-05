@@ -28,13 +28,14 @@ body{
 
 ul{
     color: white;
-    list-style: number;
+    list-style: disc;
     list-style-position: inside;
     text-align: start;
 }
 
 li{
     padding-bottom: 5px;
+    font-size: 12px;
 }
 
 h3{
@@ -101,6 +102,10 @@ a {
     border-radius: 10px;
     width: 280px;         /* <- Força a largura */
     text-align: center;   /* <- Centraliza o texto dentro do botão */
+  }
+
+  .texto-pequeno   {
+    font-size: 15px;
   }
 
   @media (max-width: 500px) {
