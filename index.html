@@ -2,46 +2,87 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baixe o Currículo Perfeito</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currículo Perfeito</title>
+  
+  <!-- Pixel Meta (troque pelo seu ID real) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_ID_PIXEL'); // ← Substitua aqui
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=SEU_ID_PIXEL&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #0e0e0e;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 500px;
+    }
+
+    a.botao {
+      background-color: #6f42c1;
+      color: white;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      transition: background 0.3s;
+    }
+
+    a.botao:hover {
+      background-color: #5a35a0;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 0,5rem;
+      }
+
+      a.botao {
+        font-size: 1rem;
+        padding: 0.8rem 1.6rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1 class="titulo">Você tem potencial!</h1>
-
-  <div class="box">
-    <h1 class="sub">📝 O que um bom currículo de programador precisa ter?</h1>
-    <ul>
-      <li>Projetos com links (GitHub, portfólio ou imagens).</li>
-      <br>
-      <li>Resumo direto sobre você e seus objetivos.</li>
-      <br>
-      <li>Habilidades técnicas claras.</li>
-      <br>
-      <li>Cursos e certificados (mesmo gratuitos).</li>
-      <br>
-      <li>Layout limpo e leitura em menos de 10 segundos.</li>
-    </ul>
-    <h3>
-      Se você é iniciante, o foco não é ter experiência é mostrar potencial, iniciativa e dedicação!  
-      <br>
-      <br> E o currículo certo faz isso por você.
-    </h3>
-  </div>
-  <div class="caixa-de-vidro">
-    <h1 class="sub">Seu currículo precisa mostrar isso!</h1>
-    <img src="311265055bada121dc7e179ce886c753.jpg" alt="currículo" />
-    <p class="texto-pequeno">
-      <b>O currículo perfeito é aquele que destaca seu potencial, mesmo sem experiência.</b><br><br>
-      É simples, direto e feito pra recrutador entender em segundos por que vale a pena te chamar.
-    </p>
-    <h2>Tenha seu currículo perfeito em 2 minutos!</h2>
-  </div>
-
- 
-
-  <a href="https://discord.gg/cT74SNPvqa" target="_blank">
-    <b>Quero meu currículo pronto pra ser contratado!</b>
-  </a>
+  <h1>BAIXE O CURRÍCULO PERFEITO!</h1>
+  <p>Um modelo direto, moderno e pensado para quem quer conquistar o primeiro emprego na programação.</p>
+  <a class="botao" href="https://discord.gg/SEU-LINK" target="_blank">🎯 Entrar na Comunidade</a>
 </body>
 </html>
