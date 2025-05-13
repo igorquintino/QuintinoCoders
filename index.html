@@ -70,22 +70,22 @@
   enviarBtn.addEventListener('click', () => {
   const email = emailInput.value;
 
-  fetch('enviodeemail-production.up.railway.app', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email })
-  })
-  .then(res => res.json())
-  .then(data => {
-    statusEmail.textContent = data.message || 'Tudo certo!';
-    statusEmail.style.color = '#4ade80'; // verde
-  })
-  .catch(err => {
-    console.error(err);
-    statusEmail.textContent = 'Erro ao enviar e-mail.';
-    statusEmail.style.color = '#f87171'; // vermelho
-  });
+fetch("https://enviodemail-production.up.railway.app/enviar-email", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ email }),
+})
+.then(async (response) => {
+  const data = await response.json();
+  alert(data.message);
+})
+.catch((error) => {
+  console.error(error);
+  alert("Erro ao enviar e-mail.");
 });
+
 
 </script>
 
