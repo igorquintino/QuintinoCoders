@@ -70,7 +70,7 @@
   enviarBtn.addEventListener('click', () => {
   const email = emailInput.value;
 
-  fetch('envio_de_email.railway.internal', {
+  fetch('enviodeemail-production.up.railway.app', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email })
